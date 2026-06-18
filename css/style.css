@@ -7,7 +7,7 @@
 
 html{
     scroll-behavior: smooth;
-    overflow-x: clip;
+    overflow-x: hidden;
     width: 100%;
     overscroll-behavior-x: none;
 }
@@ -16,7 +16,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     background-color: #f5f5f5;
-    overflow-x: clip;
+    overflow-x: hidden;
     width: 100%;
     overscroll-behavior-x: none;
 }
@@ -1232,5 +1232,10 @@ footer{
 
     .footer-frase span{
         width: 50px;
+    }
+
+    .zoom-box{
+        display: none !important;
+        left: 0;
     }
 }
