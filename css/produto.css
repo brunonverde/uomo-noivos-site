@@ -124,12 +124,20 @@ footer{
     text-decoration: none;
 }
 
-.produto-relacionado{
+.relacionados-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+
+.produtos-relacionados{
     max-width: 1200px;
     margin: 80px auto;
 }
 
-.produto-relacionado h2{
+.produtos-relacionados h2{
     text-align: center;
     margin-bottom: 40px;
 }
@@ -412,7 +420,24 @@ footer{
 
 
 
+@media (max-width: 480px){
 
+    .relacionados-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    .relacionados-grid traje-card{
+        max-width: 160px;
+        margin: 0 auto;
+    }
+
+    .relacionados-grid .traje-card img{
+        height: 220px;
+    }
+
+}
 
 
 
@@ -424,6 +449,11 @@ footer{
     .produto-container{
         flex-direction: column;
         gap: 30px;
+        padding: 0 10px;
+    }
+
+    .produtos-relacionados{
+        padding: 0 10px;
     }
 
     .produto-galeria{
